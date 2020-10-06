@@ -20,9 +20,9 @@ describe('Card', function() {
     expect(card.id).to.equal(1);
   });
 
-  it('id should be a number', function() {
+  it('should have an id that is a number', function() {
     const card = new Card(1);
-    expect(typeof card.id).to.equal('number')
+    expect(card.id).to.be.a('number')
   })
 
   it('should store a question', function() {
@@ -35,9 +35,9 @@ describe('Card', function() {
     expect(card.answers).to.deep.equal(['object', 'array', 'function']);
   });
 
-  it('possible answers should be stored in an array', function() {
+  it('should store possible answers in an array', function() {
     const card = new Card(1, 'What allows you to define a set of related information using key-value pairs?', ['object', 'array', 'function'], 'object');
-    expect(Array.isArray(card.answers)).to.deep.equal(true);
+    expect(card.answers).to.be.an('array');
   });
 
   it('should store the correct answer', function() {
@@ -47,6 +47,6 @@ describe('Card', function() {
 
   it('correct answer should be a string', function() {
     const card = new Card(1, 'What allows you to define a set of related information using key-value pairs?', ['object', 'array', 'function'], 'object');
-    expect(typeof card.correctAnswer).to.equal('string');
+    expect(card.correctAnswer).to.be.a('string');
   })
 });
