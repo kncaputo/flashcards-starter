@@ -22,12 +22,10 @@ describe('Turn', () => {
   });
 
   it('should take in a string which represents a user\'s guess', () => {
-    expect(turn.guess).to.be.a('string');
     expect(turn.guess).to.equal('blue');
   });
 
   it('should take in a current card', () => {
-    expect(turn.currentCard).to.be.an('object');
     expect(turn.currentCard).to.equal(card);
   });
 
@@ -45,15 +43,17 @@ describe('Turn', () => {
 
   it('should evaluate if guess is incorrect', () => {
     turn = new Turn('red', card);
+
     expect(turn.evaluateGuess()).to.be.false;
   });
-
+  
   it('should give feedback when guess is correct', () => {
     expect(turn.giveFeedback()).to.equal('Correct!');
   });
 
   it('should give feedback when guess is incorrect', () => {
     turn = new Turn('red', card);
+
     expect(turn.giveFeedback()).to.equal('Incorrect!');
   });
 });
