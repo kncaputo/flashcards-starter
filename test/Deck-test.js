@@ -22,6 +22,10 @@ describe('Deck', () => {
     expect(Deck).to.be.a('function');
   });
 
+  it('should be an instance of Deck', () => {
+    expect(deck).to.be.an.instanceof(Deck);
+  });
+
   it('should take in an array of cards', () => {
     expect(deck.cards).to.be.an('array');
   });
