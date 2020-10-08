@@ -2,7 +2,6 @@ const chai = require('chai');
 const expect = chai.expect;
 
 const Card = require('../src/Card');
-const Turn = require('../src/Turn');
 const Deck = require('../src/Deck');
 const Round = require('../src/Round');
 
@@ -18,7 +17,6 @@ describe('Round', () => {
     card2 = new Card(4, 'What color is a polar bear\'s skin?', ['white', 'peach', 'black'], 'black');
     card3 = new Card(12, 'Where in it\'s body is a shrimp\'s heart located?', ['head', 'tail', 'abdomen'], 'head');
     deck = new Deck([card1, card2, card3]);
-
     round = new Round(deck);
   });
 
@@ -37,12 +35,6 @@ describe('Round', () => {
   it('should be able to take turn', () => {
     expect(round.takeTurn).to.be.a('function');
   });
-  // TODO Refactor this
-  // it('should create a new instance of turn when a guess is made', () => {
-  //   round.takeTurn('blue whale');
-  //
-  //   expect(round.takeTurn('blue whale')).to.be.an.instanceof(Turn);
-  // });
 
   it('should update turns count when turn is taken', () => {
     round.takeTurn('blue whale');
