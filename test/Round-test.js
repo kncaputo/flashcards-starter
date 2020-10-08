@@ -82,7 +82,6 @@ describe('Round', () => {
     expect(round.calculatePercentCorrect()).to.equal(67);
   });
 
-  // TODO do I want this in a console.log? Do I need my other messages to have console.logs
   it('should print message that displays percentage of questions answered correctly at the end of the round', () => {
     round.takeTurn('giant squid');
     round.takeTurn('peach');
@@ -90,5 +89,4 @@ describe('Round', () => {
 
     expect(round.endRound()).to.equal('** Round over! ** You answered 33% of the questions correctly!');
   })
-
 });
