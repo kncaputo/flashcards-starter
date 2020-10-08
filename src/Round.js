@@ -13,10 +13,9 @@ class Round {
 
   takeTurn(guess) {
     const turn = new Turn(guess, this.deck[0]);
-    const value = turn.evaluateGuess();
     if (!turn.evaluateGuess()) {
       this.incorrectGuesses.push(this.deck[0].id);
-    };
+    }
     this.turns++;
     this.deck.shift();
     return turn.giveFeedback();
