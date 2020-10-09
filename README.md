@@ -8,10 +8,6 @@ In this project, I created a program to simulate a flashcards quiz game to be pl
 
 * [Project Brief and Rubric](https://frontend.turing.io/projects/flash-cards.html)
 
-## Programming Languages Use
-
-* Javascript
-
 ## Project Goals
 
 Complete four iterations to build the flashcard game which included: 
@@ -30,7 +26,11 @@ Complete four iterations to build the flashcard game which included:
 
 ![Play Game](https://media.giphy.com/media/xyxxXw9dGKTBuQpPD0/giphy.gif)
 
-## Project Planning
+## Programming Languages Use
+
+* Javascript
+
+## Planning
 
 * Project planning board can be found [here](https://github.com/kncaputo/flashcards-starter/projects/1)
 
