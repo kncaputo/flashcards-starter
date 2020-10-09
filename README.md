@@ -2,8 +2,6 @@
 
 Module 2 Solo Project at the [Turing School of Software & Design](https://turing.io/)
 
-By: Kara Caputo
-
 ## Project Overview
 
 In this project, I created a program to simulate a flashcards quiz game to be played through the command line. A user is able to see the questions, take guesses, and see a final score at the end of the round.
@@ -30,6 +28,8 @@ Complete four iterations to build the flashcard game which included:
 * Program responds with a feedback statement indicating whether an answer is correct or incorrect
 * At the end of the game, a final message is displayed which includes percentage of correct answers
 
+![Play Game](https://media.giphy.com/media/xyxxXw9dGKTBuQpPD0/giphy.gif)
+
 ## Project Planning
 
 * Project planning board can be found [here](https://github.com/kncaputo/flashcards-starter/projects/1)
@@ -40,6 +40,6 @@ Complete four iterations to build the flashcard game which included:
 * Move into the directory: `cd flashcards-starter`
 * Run `node index.js` to run the app.
 
-## GitHub Pages Link
+## Contributor
 
-https://github.com/kncaputo/slap-jack
+* [Kara Caputo](https://github.com/kncaputo)
